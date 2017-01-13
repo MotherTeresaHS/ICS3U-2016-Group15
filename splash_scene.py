@@ -8,7 +8,7 @@ from scene import *
 import ui
 import time
 
-from main_menu_scene import *
+from main_menu_scene import MainMenuScene
 
 
 class SplashScene(Scene):
@@ -17,15 +17,25 @@ class SplashScene(Scene):
         
         # create timer, so that after 2 seconds move to next scene
         self.start_time = time.time()
+        center_of_screen = self.size/2
         
         # add MT blue background color
         self.background = SpriteNode(position = self.size / 2, 
                                      color = (0.61, 0.78, 0.87), 
                                      parent = self, 
                                      size = self.size)
-        self.school_crest = SpriteNode('./assets/sprites/MT_Crest.jpg',
+        self.school_crest = SpriteNode('./assets/sprites/Mt_Crest.JPG',
                                        parent = self,
-                                       position = self.size/2)
+                                       position = self.size/2,
+                                       size = self.size)
+                                       
+        #self.school_crest = 
+        LabelNode(text = '                                 Loading...',
+                                      font=('Helvetica', 20),
+                                      parent = self,
+                                      position = self.size / 4,
+                                      scale = 3)
+                                      
     
     def update(self):
         # this method is called, hopefully, 60 times a second

@@ -20,7 +20,7 @@
 from scene import *
 import ui
 
-from splash_scene import *
+from splash_scene import SplashScene
 
 
 #  ..use when deploying app for Xcode and the App Store
