@@ -26,10 +26,10 @@ class HelpScene(Scene):
      
                                       font=('Helvetica', 20),
                                       parent = self,
-                                      position = self.size / 4,
+                                      position = self.size / 3.5,
                                       scale = 3)
                                       
-        self.start_button = LabelNode(text = '                                        Art work from: http://opengameart.org',
+        self.start_button = LabelNode(text = '                                        Art work from: http://opengameart.org \n                                                 especially thank for Byron Knoll',
         
      
                                       font=('Helvetica', 20),
@@ -37,10 +37,10 @@ class HelpScene(Scene):
                                       position = self.size / 6,
                                       scale = 3)
                                       
-        self.school_crest = LabelNode(text = 'Computer will give you 2 same card,  \n        but card total is 3  and then \n          use you eyes try to find \n     the specially card (only have one)',
+        self.school_crest = LabelNode(text = 'Computer will give you 2 same card, \n    but card total is 3  and then \n     use you eyes try to find \nthe specially card (only have one)',
                                       font=('Helvetica', 20),
                                       parent = self,
-                                      position = self.size / 2,
+                                      position = self.size / 1.8,
                                       scale = 3)
                                       
         back_button_position = self.size
